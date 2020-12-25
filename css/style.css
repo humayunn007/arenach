@@ -1,0 +1,89 @@
+@charset "utf-8";
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+html
+{
+	font-size: 100%;
+}
+
+#particles-js
+{
+	width: 100%;
+	position: absolute;
+	height: 100%;
+	background: url(../images/moon-31665_1280.webp) no-repeat center;
+	background-size: cover;
+	background-attachment: fixed;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	
+}
+.particles-js-canvas-el
+{
+	position: absolute;
+}
+#particles-js h1
+{
+	font-size: 3.75rem;
+	font-family: 'Satisfy', cursive;
+	position: relative;
+}
+#particles-js h1::after
+{
+	position: absolute;
+	content: "Marry Christmas";
+	top: 100%;
+	width: 100%;
+	animation: change 3s linear infinite;
+	animation-delay: 3s;
+	
+	display: block;
+	text-align: center;
+}
+
+@keyframes change
+
+{
+	0%{
+		color: red;
+		
+		;
+	}
+	10%{
+		color:rgba(255,0,198,1.00);
+		
+		;
+	}
+	30%{
+		color:rgba(255,118,0,1.00);
+		content: "and";
+	
+		;
+	}
+	50%{
+		color:rgba(255,253,0,1.00);
+		
+		;
+	}
+	80%{
+		color:rgba(0,235,255,1.00);
+		
+		;
+	}
+	100%{
+		color:rgba(253,0,244,1.00);
+		content: "Happy New Year";
+		
+		;
+	}
+}
+
+@media (max-width:768px)
+{
+	html
+	{
+		font-size: 70%;
+	}
+}
